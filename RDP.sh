@@ -1,8 +1,8 @@
 #! /bin/bash
 printf "Installing RDP Be Patience... " >&2
 {
-sudo useradd -m Sukhtaj
-sudo adduser Sukhtaj sudo
+sudo useradd -m deepnote
+sudo adduser deepnote sudo
 echo 'Unzippedtech:8414' | sudo chpasswd
 sed -i 's/\/bin\/sh/\/bin\/bash/g' /etc/passwd
 sudo apt-get update
@@ -18,7 +18,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg --install google-chrome-stable_current_amd64.deb
 sudo apt install --assume-yes --fix-broken
 sudo apt install nautilus nano -y 
-sudo adduser Sukhtaj chrome-remote-desktop
+sudo adduser deepnote chrome-remote-desktop
 } &> /dev/null &&
 printf "\nSetup Complete " >&2 ||
 printf "\nError Occured " >&2
